@@ -4,7 +4,7 @@ Modified version of [Adafruit_INA219 library](https://github.com/adafruit/Adafru
 
 # Library Functional Changes: 
 - no longer freezes/crashes Arduino when I2C bus blocked
-- begin() no longer sets default calibration so desired calibration must be called, e.g.
+- begin() no longer sets default calibration so desired calibration must be called, e.g.:
 ~~~~
 Adafruit_INA219 ina_;
 
