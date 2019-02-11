@@ -16,16 +16,15 @@ void setup(void)
   #if defined(__AVR_ATmega2560__)
       pinMode(SDA, INPUT);    
       pinMode(SCL, INPUT);
-      digitalWrite(SDA, 1);
-      digitalWrite(SCL, 1);
+      digitalWrite(SDA, 1);         //20  checkme
+      digitalWrite(SCL, 1);         //21  checkme
   #endif
 
   uint32_t currentFrequency;
     
-  Serial.println("Hello!");
+  Serial.println("init INA219");
   
   // Initialize the INA219.
-  //ina219.setAddr(0x40);                   // OPTIONAL (default 0x40) setup INA219 current sensor I2C address, Note: INA219.h is modified to do this
   ina219.begin();
   // To use a slightly lower 32V, 1A range (higher precision on amps):
   ina219.setCalibration_32V_1A();
