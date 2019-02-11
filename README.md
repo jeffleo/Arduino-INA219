@@ -4,6 +4,7 @@ Modified version of [Adafruit_INA219 library](https://github.com/adafruit/Adafru
 
 # Library Functional Changes: 
 - no longer freezes/crashes Arduino when I2C bus blocked
+- scanBus() added to scan for your hardware on the I2C line and print out its address for debugging
 - begin() no longer sets default calibration so desired calibration must be called, e.g.:
 ~~~~
 Adafruit_INA219 ina_;
@@ -17,7 +18,7 @@ void setup(){
 //  void setCalibration_16V_400mA_11bit(void);        // allows faster sampling rate than 400mA at 12bit
 }
 ~~~~
--  ina_.scanBus() added to scan for your hardware on the I2C line and print out its address for debugging
+
 
 # Credit
 - the original [Adafruit_INA219 library](https://github.com/adafruit/Adafruit_INA219)
