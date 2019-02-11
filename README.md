@@ -20,7 +20,7 @@ void setup(){
 -  ina_.scanBus() added to scan for your hardware on the I2C line and print out its address for debugging
 
 # Credit
-- the original [Adafruit_INA219 library](https://github.com/adafruit/Adafruit_INA219), contains examples
+- the original [Adafruit_INA219 library](https://github.com/adafruit/Adafruit_INA219)
 - dsscircuits Arduino I2C library as described in [dsscircuits article](http://dsscircuits.com/articles/86-articles/66-arduino-i2c-master-library)
 
 For additional examples, refer to (DC motor current controller)[https://github.com/jeffleo/DC-Motor-Controller] implementation in Mot_Ctrl.h header only class.
